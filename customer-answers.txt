@@ -1,0 +1,90 @@
+/******* Question 1: *********************************************************/
+Hello,
+
+I'm new to search engines, and there are a lot of concepts I'm not educated on. To make my onboarding smoother, it'd help if you could provide me with some definitions of the following concepts:
+- Records
+- Indexing
+
+I'm also struggling with understanding what types of metrics would be useful to include in the "Custom Ranking."
+
+Cheers,
+George
+
+///////// Answer 1 ////////////
+
+Hi George,
+
+Sure, I'd be happy to help you with those concepts!
+
+Records: Records are the items stored in an index.  A record is a JSON schemaless
+object you wish to make searchable that you add to your index. Each attribute in a
+record can be used for searching, displaying, filtering, or ranking.  For example,
+if I were to build an index of various holidays celebrated in the US, perhaps a
+single record from this index would look like this:
+
+{
+  id: 49270,
+  name: 'Halloween',
+  date: 10-31
+}
+
+Indexing: Indexing is the process of uploading and analyzing a dataset so as to
+allow for fast searches in the future.  To begin the indexing process, you would
+pass your dataset to us and indicate which of the fields in your dataset are needed
+to search, display, filter, and rank your data.  We then analyze and store, or index,
+the data in the best way possible to allow for fast searches.
+
+In terms of metrics for Custom Ranking, you would want to select metrics that would
+help us bring the most relevant records to the top of the search results for your users.
+For example, in our example holidays index perhaps you would want the date to be
+included as a Custom Ranking metric so that the upcoming holidays (eg 4th of July)
+show up top in the search.
+
+I hope that helps!  If you have any follow up or additional questions, don't hesitate
+to let me know.
+
+Best,
+Becca
+
+
+
+
+
+/******* Question 2: *********************************************************/
+Hello,
+
+Sorry to give you the kind of feedback that I know you do not want to hear, but I really hate the new dashboard design. Clearing and deleting indexes are now several clicks away. I am needing to use these features while iterating, so this is inconvenient.
+
+Regards,
+Matt
+
+///////// Answer 2 ////////////
+
+Hi Matt,
+
+I'm sorry to hear that!  Our intention with adding the additional clicks to clear indices was to help users avoid accidentally clearing their indices, but I could understand that change being frustrating if you already had the steps necessary built in to your iterative process.
+
+Best,
+Becca
+
+
+
+
+
+
+/******* Question 3: *********************************************************/
+Hi,
+
+I'm looking to integrate Algolia in my website. Will this be a lot of development work for me? What's the high level process look like?
+
+Regards,
+Leo
+
+///////// Answer 3 ////////////
+
+Hi Leo,
+
+Thanks for the question!
+
+Best,
+Becca
