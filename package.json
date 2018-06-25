@@ -1,0 +1,20 @@
+{
+  "name": "restaurant-search",
+  "version": "1.0.0",
+  "description": "Interview exercise to build search interface for restaurants",
+  "main": "webpack.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "import": "node project-files/import.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bstanger/restaurant-search.git"
+  },
+  "author": "Becca Stanger",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bstanger/restaurant-search/issues"
+  },
+  "homepage": "https://github.com/bstanger/restaurant-search#readme"
+}
