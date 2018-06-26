@@ -1,5 +1,5 @@
 const algoliasearch = require('algoliasearch');
-const adminKey = require('./../config/adminKey.js');
+const adminKey = require('./../config/adminKey.js').admin;
 const chunk = require('lodash.chunk');
 
 
@@ -60,3 +60,19 @@ async function addToIndex(){
   });
 }
 addToIndex();
+
+// Customize index attributes
+index.setSettings({
+  searchableAttributes: [
+    'name',
+    'address',
+    'area',
+    'city',
+    'state',
+    'country',
+    'postal_code',
+    'cuisine',
+    'neighborhood'
+  ]
+  // customRanking: ['desc(popularity)'],
+});
