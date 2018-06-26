@@ -12,6 +12,7 @@ body {
   width: 100vw;
   min-height: 100vh;
   background-color: #fafafa;
+  background-image: url('background.svg');
 }
 
 .restaurant-locator-app__body {
@@ -56,6 +57,7 @@ body {
 
 .search-body__not-empty {
   display: flex;
+  flex: 1 1 auto;
 }
 
 .search-body__sidebar {
@@ -63,7 +65,7 @@ body {
 }
 
 .search-body__main {
-  flex: 1 1 auto;
+  flex: 1 0 auto;
 }
 
 .search-body__results {
@@ -77,8 +79,16 @@ body {
 }
 
 .search-body__load {
-  margin: 0 auto;
+  text-align: center;
+}
+
+.search-body__load-btn {
+  font-size: 14px;
   border-color: #e6e6e6;
+  border-radius: 4px;
+  color: rgba(0, 0, 0, 0.5);
+  padding: 10px 55px;
+  cursor: pointer;
 }
 /***************************************************************/
 
@@ -103,9 +113,18 @@ body {
   margin: 0;
 }
 
+.result__rating-info,
 .result__text p {
   margin: 6px 0 0;
   color: #707070;
+}
+
+.result__rating {
+  color: #ffbf00;
+}
+
+.result__star-rating {
+  margin: 0 10px;
 }
 
 .result__text span {

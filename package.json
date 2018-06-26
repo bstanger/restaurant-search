@@ -33,6 +33,7 @@
     "lodash.chunk": "^4.2.0",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
+    "react-star-ratings": "^2.3.0",
     "webpack": "^4.12.1"
   },
   "devDependencies": {

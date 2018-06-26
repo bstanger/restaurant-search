@@ -28,7 +28,9 @@ class SearchBody extends React.Component {
                     <SearchResult result={result} key={idx}/>
                   )}
                 </div>
-                <button className='search-body__load'>Show More</button>
+                <div className='search-body__load'>
+                  <button className='search-body__load-btn'>Show More</button>
+                </div>
               </section>
             </div>
           </div>
