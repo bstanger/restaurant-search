@@ -1,10 +1,11 @@
-var path = require('path');
-var webpack = require('webpack');
+const path = require('path');
+const webpack = require('webpack');
+const src = path.join(__dirname, '/project-files/assets/components');
 
 module.exports = {
-    entry: './project-files/assets',
+    entry: `${src}/RestaurantLocatorApp.jsx`,
     output: {
-        path: path.resolve(__dirname, 'project-files/build'),
+        path: path.resolve(__dirname, './project-files/build'),
         filename: 'app.bundle.js'
     },
     module: {
@@ -12,7 +13,7 @@ module.exports = {
             {
                 test: /\.jsx?$/,
                 loader: 'babel-loader',
-                include: path.join(__dirname, '/project-files/assets'),
+                include: src,
                 exclude: '/node_modules/',
                 query: {
                     presets: ['es2015', 'react']
