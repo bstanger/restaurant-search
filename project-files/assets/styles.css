@@ -43,6 +43,19 @@ body {
 .search-body {
   display: flex;
   padding: 0 25px;
+  min-height: 350px;
+}
+
+.search-body__empty {
+  flex: 1 1 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.search-body__not-empty {
+  display: flex;
 }
 
 .search-body__sidebar {
@@ -51,7 +64,6 @@ body {
 
 .search-body__main {
   flex: 1 1 auto;
-  min-height: 350px;
 }
 
 .search-body__results {
